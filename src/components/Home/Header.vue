@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <h1 class="tab">DSTube</h1>
+      <router-link to="/" class="tab">DSTube</router-link>
       <div class="search-bar">
         <input v-model="search" @input="searchData" type="text" placeholder="Search" class="search-input">
         <button @click="searchData" class="search-button"><i class="fas fa-search"></i> Search</button>
@@ -55,6 +55,8 @@ header {
   font-size: 18px;
   padding: 10px;
   border-radius: 4px;
+  text-decoration: none; 
+  color : #fff;
 }
 
 nav {
